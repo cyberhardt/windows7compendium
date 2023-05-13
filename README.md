@@ -1,1 +1,145 @@
 Description: This is a curated list of useful programs and websites related to Windows 7, focused on compatilibity with modern hardware and software.
+
+There are three sections: ISO's, COMPATIBILITY and PROGRAMS. With the information on this list, provided your CPU/GPU are compatible, you will be able to get your Windows 7 system working with minimal effort. 
+
+The ideal situation is: X570 chipset ASUS motherboard with 5xxx or 6xxx series GPU's from AMD.
+
+-
+
+Also check out the Pandora Compendium: https://eveningprimrose.neocities.org/pandora-compendium.txt
+
+-
+
+ISO's
+
+I - Win 7 ULTIMATE x64 SP1 HeiDoc: https://archive.org/details/win7-ult-sp1-english
+
+II¹ - Win 7 x64 SP1 + NVME, USB 3.0 + NON-TELEMETRY UPDATES UP TO MID 2020: https://archive.org/details/windows-7-updated
+
+III - Win 7 PRO x86 + x64 SP1: https://download.microsoft.com/download/0/6/3/06365375-C346-4D65-87C7-EE41F55F736B/7601.24214.180801-1700.win7sp1_ldr_escrow_CLIENT_PROFESSIONAL_x64FRE_en-us.iso
+
+¹According to the original post (https://board.eclipse.cx/viewtopic.php?t=401): "This is Windows 7 Home Premium, Professional, and Ultimate x64 with all the non-telemetry updates up to 2020-01 and 2016-09 all in one. It also has .Net 4.8, IE11, VC++, and more. This also includes NVMe and USB 3.0 drivers."
+
+-
+
+COMPATIBILITY
+
+A - Install Windows 7 on newer x570 AMD CPU's (and others): https://www.youtube.com/watch?v=GNlf2Qdy8bE
+
+B - Windows 7/8.1 drivers for usb 3.0/3.1 for new AMD chipset: https://winraid.level1techs.com/t/solution-win7-8-1-drivers-for-usb-3-0-3-1-controllers-of-new-amd-chipset-systems/33603
+
+C - Run Windows 8+ applications on Windows 7 (Project): https://github.com/vxiiduu/VxKex
+
+D - Windows 10 API on Windows 7 (Project): https://github.com/nalexandru/api-ms-win-core-path-HACK/releases
+
+E - Good Guide: https://www.reddit.com/r/windows7/comments/id5kbo/windows_7_survival_guide/
+
+F - MyDigitalLife thread regarding USB 3.0: https://forums.mydigitallife.net/threads/usb-3-xhci-driver-stack-for-windows-7.81934/
+
+G - Windows Update Minitool: https://www.majorgeeks.com/files/details/windows_update_minitool.html
+
+H - Xbox 360 Accessories: https://archive.org/download/xbox-360-Accessories-1.2
+
+I² - Custom Qt 6.3.1 DLLs for Windows 7: https://web.tresorit.com/l/iWnTl#yGMg45iqZObF8miEZt7FaA
+
+J - Python 9 to 11 for Windows 7: https://github.com/adang1345/PythonWin7
+
+²Found on this thread: https://github.com/vxiiduu/VxKex/issues/56, https://github.com/vxiiduu/VxKex/issues/56#issuecomment-1408453974, it also contains instructions on how to make Blender LTS 2.93 work.
+
+In order to install drivers while running a raw ISO you'll need a PS2 mouse, as the USB ports most likely won't work.
+
+-
+
+Links present in the "Installing Windows 7 On AMD Ryzen 9 5900x 5950x & X570 Board Chipset" youtube video: 
+
+Modified USB 3.2 Drivers for Windows 7 for B550/X570 boards | Courtesy of canonking (password is: xiaofengmod):
+https://disk.yandex.com/d/eFvJ-Jyxq5jcHA
+
+Windows 7 SP1 Download (x64):
+https://www.catalog.update.microsoft.com/Search.aspx?q=kb976932
+
+Windows Patch KB4474419:
+https://www.catalog.update.microsoft.com/Search.aspx?q=KB4474419
+
+Visual C++ Redistributable for Visual Studio 2015 download:
+https://www.microsoft.com/en-us/download/details.aspx?id=48145
+
+AMD Ryzen Win7 Chipset Drivers for x470 Boards:
+https://www.amd.com/en/support/chipsets/amd-socket-am4/x470
+
+Remove "Unsupported Hardware" in Windows 7 (download latest stable release):
+https://web.archive.org/web/20191222033449/https://github.com/zeffy/wufuc
+
+Install Windows 7 on Ryzen via USB & Setup Gigabyte's Tool: https://youtube.com/watch?v=LUT0LM2OwYY&t=0
+
+Install Windows 7 on Ryzen using PC swap method:
+https://youtube.com/watch?v=me88Meynn08&t=0
+
+-
+
+Links present in the Winraid forum thread:
+
+AMD official USB driver modified version (Especially ASUS motherboard must use this version):
+https://disk.yandex.ru/d/46C89LbaeVqVqw 328
+
+Users who are not ASUS motherboards strongly recommend using this driver package, which supports UASP and better compatibility（This package also can work for Intel and Zhaoxin platforms）:https://disk.yandex.ru/d/0FqOqmzQjnAulQ 251
+
+If you meet A5 BSOD, you can use mod acpi.sys to replace the file use PE system:
+Replace C:\Windows\system32\drivers\acpi.sys
+Replace C:\Windows\System32\DriverStore\FileRepository\acpi.inf_amd64_neutral_476d4b744f1f6916\acpi.sys
+MOD acpi.sys download link:https://disk.yandex.ru/d/4jeNfg1seOJ4oQ 275
+
+If you don’t know how to have a full patch win7. Here is the English win7 pro x64 install image with drivers that support AMD platforms（Not support ASUS mainboards）. You can use USB PE system to use tools install it：https://1drv.ms/u/s!AtTpD7JSBIarhJsDr2mj9qvEdTFqYQ?e=yDayfg 220
+
+-
+
+PROGRAMS
+
+1 - Microsoft Security Essentials Antivirus: https://www.microsoft.com/en-us/download/details.aspx?id=5201
+    ∟ will soon be deprecated, some good alternatives are Karspersky Cloud and Malwarebytes.
+   
+2 - Visual Studio 2010 Ultimate: https://archive.org/details/en_vs_2010_ult
+
+3 - CFF Explorer PE Editor: https://ntcore.com/files/CFF_Explorer.zip
+    ∟ open-source alternative: https://github.com/hasherezade/pe-bear, both work on win7
+
+4 - Da Vinci Resolve 18 possible workaround (interesting read): https://github.com/vxiiduu/VxKex/issues/61
+
+5 - Nanami Madobe Themes: https://archive.org/details/NanamiMadobeTheme, https://archive.org/details/eng-subbed-windows-7-madobe-nanami-commercial
+
+6 - HxD Hex Editor: https://mh-nexus.de/en/hxd/
+    ∟ open source alternative: https://github.com/digitalw0lf/hextor
+
+7 - Some programs and their last Windows 7 compatible versions:
+
+i - MkvToolnix: version 68.0.0-revision-036-g37903f25c (https://mkvtoolnix.download/windows/continuous/64-bit/68.0.0/)
+    ∟ unofficial qt5 builds: https://forum.videohelp.com/threads/405407-NON-OFFICIAL-Windows-builds-of-MKVtoolnix/page4#post2685373
+
+ii - Handbrake: 1.3.3 (https://handbrake.fr/rotation.php?file=HandBrake-1.3.3-x86_64-Win_GUI.exe&old=true)
+
+iii - Blender: 2.9.3 LTS (https://www.blender.org/download/lts/2-93/)
+
+iv - Chromium: 108.0.5359.125
+     ∟ this version has an annoying warning, so I recommend using some previous ones. related threads on github: https://github.com/ungoogled-software/ungoogled-chromium/issues/2187, https://github.com/ungoogled-software/ungoogled-chromium-windows/issues/193, https://github.com/ungoogled-software/ungoogled-chromium/discussions/2173
+
+v - VS Codium: 1.71.1
+    ∟ you might want to download older ones to avoid the annoying popup. apparently some newer versions work as well now: (https://github.com/VSCodium/vscodium/issues/1264)
+
+vi - Mullvad: 2021.6
+     ∟ this version lacks wireguard. I recommend downloading standalone wireguard, and then importing your settings as per: https://mullvad.net/en/help/tag/wireguard/
+
+vii - Da Vinci Resolve: 16.2.8 (https://www.blackmagicdesign.com/support/download/0221c32a73844413bc0b1ec35686a4d3/Windows)
+
+viii - Python: up to 3.8
+
+ix - Dolphin Emulator: up to 5.0-16380
+
+x - LosslessCut: 3.50.0
+
+On the Pandora Compendium, each program has a letter indicating whether it works on Windows 7 or not. This is just a brief list of some of them.
+
+Remember: Unsupported =/= Incompatible. Unsupported programs might work.
+
+-
+
+Always save web pages and download useful software like those to prevent stuff from getting lost. Also save SOURCE CODE of stable win7 supported versions of software as well as their respective working builds. 
